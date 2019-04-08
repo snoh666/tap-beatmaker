@@ -10,8 +10,80 @@ body{
 .app{
   width: 100vw;
   height: 100vh;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.visuals{
+  width: 100%;
+}
+.pads{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.pads > div{
+  width: 100px;
+  height: 100px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.pad1 {
+  background: #60d394;
+}
+
+.pad2 {
+  background: #d36060;
+}
+
+.pad3 {
+  background: #c060d3;
+}
+
+.pad4 {
+  background: #d3d160;
+}
+
+.pad5 {
+  background: #606bd3;
+}
+
+.pad6 {
+  background: #60c2d3;
+}
+
+.visuals > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
 }
